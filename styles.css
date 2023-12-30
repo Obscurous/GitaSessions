@@ -174,7 +174,7 @@ nav {
   background-color: var(--white);
   border-radius: 5rem;
   cursor: pointer;
-  display: none;
+  /* display: none; */
 }
 
 .header__tag span {
@@ -468,14 +468,38 @@ nav {
   text-align: center;
 }
 
+@media (width <= 540px) {
+  .header__tag {
+    position: absolute;
+    bottom: 2rem;
+    width: 11.5rem;
+    left: 90%;
+    transform: translateX(-150%);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 5rem;
+    cursor: pointer;
+  }
+
+  .header__content h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+  }
+  
+  .header__content p {
+    margin-bottom: 3.5rem;
+    font-size: 0.8rem;
+    color: var(--white);
+  }
+}
+
 @media (width > 540px) {
   .nav__logo {
     max-width: 120px;
-  }
-
-  .header__tag {
-    display: flex;
-    align-items: center;
   }
 
   .shopping__grid {
