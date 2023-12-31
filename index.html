@@ -8,14 +8,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Santa Shop</title>
+    <title>Gita Sessions</title>
   </head>
 
   <body>
     <header class="header">
       <nav>
         <div class="nav__logo">
-          <img src="assets/logo-white.png" alt="logo" />
+          <img src="assets/logo-white.png" alt="logo" href="index.html" />
         </div>
         <!-- <div class="nav__actions">
           <a href="#"><i class="ri-user-3-line"></i></a>
@@ -31,7 +31,7 @@
             Welcome to our session on the Bhagavad Gita's practical wisdom for daily life. Join us as we delve into its timeless teachings, exploring how they can bring both inner peace and purpose to your everyday existence.
           </p>
         </div>
-        <a href="thankyou.html" class="header__tag">
+        <a href="#form" class="header__tag">
           Register Now <span><i class="ri-cursor-fill"></i></span>
         </a>
       </div>
@@ -130,6 +130,26 @@
       </div>
     </section>
 
+    <section class="form__container" id="form">
+      <script type="text/javascript"> var submitted=false</script>
+      <iframe name="hiddenConfirm" id="hiddenConfirm" style="display:none;" onload="if(submitted){
+        window.location='thankyou.html';}"></iframe>
+      
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd46PuT3TfbJbK2PZCX5xnxxoI3CHGk8W82TSeCn34_-zhBdg/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+        <h1>Register Now</h1>
+        <label for="entry.855934851">Name:</label>
+        <input type="text" id="name" name="entry.855934851" required>
+    
+        <label for="entry.1704927616">Scholar ID.:</label>
+        <input type="text" id="scholarNo" name="entry.1704927616" pattern="[0-9]{7}" required title="Please enter a 7-digit Scholar ID">
+    
+        <label for="entry.1117172966">Mob No.:</label>
+        <input type="tel" id="mobNo" name="entry.1117172966" pattern="[0-9]{10}" required title="Please enter a 10-digit mobile number">
+    
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
     <!-- <section class="section__container explore__container">
       <div class="explore__image">
         <div class="bg"></div>
@@ -146,6 +166,7 @@
         </div>
       </div>
     </section> -->
+
 <!-- 
     <section class="coupon">
       <div class="section__container coupon__container">
@@ -171,7 +192,7 @@
       <div class="footer__col">
         <ul class="footer__links">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Register</a></li>
+          <li><a href="#form">Register</a></li>
           <li><a href="#">Contact us</a></li>
         </ul>
         <ul class="footer__socials">
